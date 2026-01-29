@@ -8,21 +8,38 @@ A Claude Code skill for reading and sending iMessages directly from your Claude 
 - `/imessage send <recipient> <message>` - Send an iMessage
 - `/imessage monitor` - Monitor for new messages and auto-respond
 
-## Installation
+## Quick Install
+
+One command to install:
+
+```bash
+git clone https://github.com/dylangroos/claude-imessage-skill.git ~/.claude/plugins/imessage && echo "✓ iMessage skill installed! Restart Claude Code to use it."
+```
+
+Then:
+1. **Restart Claude Code** (important!)
+2. **Grant Full Disk Access**:
+   - Open System Settings > Privacy & Security > Full Disk Access
+   - Click the + button and add Terminal.app (or your IDE)
+   - Restart your terminal/IDE
+
+That's it! The skill is now available in Claude Code.
+
+## Manual Installation
+
+If you prefer manual setup:
 
 1. Clone this repo:
    ```bash
    git clone https://github.com/dylangroos/claude-imessage-skill.git
    ```
 
-2. Link to Claude plugins:
+2. Create symlink to Claude plugins:
    ```bash
    ln -s ~/claude-imessage-skill ~/.claude/plugins/imessage
    ```
 
-3. Grant Full Disk Access to Terminal:
-   - System Settings > Privacy & Security > Full Disk Access
-   - Add Terminal.app (or your IDE)
+3. Restart Claude Code
 
 ## Requirements
 
