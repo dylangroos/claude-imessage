@@ -13,7 +13,7 @@ A Claude Code skill for reading and sending iMessages directly from your Claude 
 One command to install:
 
 ```bash
-git clone https://github.com/dylangroos/claude-imessage-skill.git ~/.claude/plugins/imessage && echo "✓ iMessage skill installed! Restart Claude Code to use it."
+git clone https://github.com/dylangroos/claude-imessage.git ~/.claude/plugins/imessage && echo "✓ iMessage skill installed! Restart Claude Code to use it."
 ```
 
 Then:
@@ -31,12 +31,12 @@ If you prefer manual setup:
 
 1. Clone this repo:
    ```bash
-   git clone https://github.com/dylangroos/claude-imessage-skill.git
+   git clone https://github.com/dylangroos/claude-imessage.git
    ```
 
 2. Create symlink to Claude plugins:
    ```bash
-   ln -s ~/claude-imessage-skill ~/.claude/plugins/imessage
+   ln -s ~/claude-imessage ~/.claude/plugins/imessage
    ```
 
 3. Restart Claude Code

@@ -1,6 +1,6 @@
 {
   "name": "claude-imessage",
-  "description": "Read and send iMessages directly from Claude Code. Access your Messages.app conversations, send messages, and monitor for new messages.",
+  "description": "Monitor incoming iMessages and let Claude respond in real-time. Read conversations, send replies, and run an auto-response loop — all from your terminal.",
   "author": {
     "name": "Dylan Groos",
     "email": "dylangroos@gmail.com"

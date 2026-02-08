@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-imessage",
+  "description": "Let Claude Code monitor your incoming iMessages and respond intelligently. Read conversations, send replies, and run an auto-response loop — all from your terminal.",
+  "owner": {
+    "name": "Dylan Groos",
+    "email": "dylangroos@gmail.com"
+  },
+  "metadata": {
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "imessage",
+      "description": "Monitor incoming iMessages and let Claude respond in real-time. Read conversations from your Messages.app database, send replies via AppleScript, and run a continuous monitoring loop that watches for new messages and crafts intelligent auto-responses.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Dylan Groos",
+        "email": "dylangroos@gmail.com"
+      },
+      "source": ".",
+      "category": "productivity",
+      "keywords": ["imessage", "messages", "sms", "texting", "auto-reply", "monitoring", "macos"],
+      "license": "MIT",
+      "homepage": "https://github.com/dylangroos/claude-imessage",
+      "repository": "https://github.com/dylangroos/claude-imessage"
+    }
+  ]
+}
