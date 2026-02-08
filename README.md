@@ -1,74 +1,48 @@
-# Claude iMessage Skill
+# Claude iMessage
 
-A Claude Code skill for reading and sending iMessages directly from your Claude sessions.
+A Claude Code plugin that monitors your incoming iMessages and lets Claude respond intelligently — all from your terminal.
 
-## Features
+## What it does
 
-- `/imessage read` - Read recent iMessages
-- `/imessage send <recipient> <message>` - Send an iMessage
-- `/imessage monitor` - Monitor for new messages and auto-respond
+Claude watches your Messages.app for new incoming texts, reads the conversation context, and crafts responses on your behalf. You can also read message history and send one-off replies.
 
-## Quick Install
+- **Monitor & auto-respond** — Claude watches for new messages and responds in real-time
+- **Read conversations** — Query your iMessage history by contact or time
+- **Send messages** — Fire off iMessages to any contact
 
-One command to install:
+## Install
 
 ```bash
-git clone https://github.com/dylangroos/claude-imessage.git ~/.claude/plugins/imessage && echo "✓ iMessage skill installed! Restart Claude Code to use it."
+git clone https://github.com/dylangroos/claude-imessage.git ~/.claude/plugins/imessage
 ```
 
-Then:
-1. **Restart Claude Code** (important!)
-2. **Grant Full Disk Access**:
-   - Open System Settings > Privacy & Security > Full Disk Access
-   - Click the + button and add Terminal.app (or your IDE)
-   - Restart your terminal/IDE
-
-That's it! The skill is now available in Claude Code.
-
-## Manual Installation
-
-If you prefer manual setup:
-
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/dylangroos/claude-imessage.git
-   ```
-
-2. Create symlink to Claude plugins:
-   ```bash
-   ln -s ~/claude-imessage ~/.claude/plugins/imessage
-   ```
-
-3. Restart Claude Code
-
-## Requirements
-
-- macOS with Messages.app
-- Full Disk Access permission
-- Claude Code CLI
+Then restart Claude Code and grant **Full Disk Access** to your terminal (System Settings > Privacy & Security > Full Disk Access).
 
 ## Usage
 
-### Read recent messages
 ```
-/imessage read
-```
-
-### Send a message
-```
-/imessage send +16158819950 "Hello from Claude!"
-```
-
-### Start monitoring (auto-respond mode)
-```
+# Start monitoring — Claude watches for messages and responds
 /imessage monitor
+
+# Read recent messages
+/imessage read
+
+# Send a message
+/imessage send +1234567890 "Hey, what's up?"
 ```
 
 ## How it works
 
 - Reads from `~/Library/Messages/chat.db` (SQLite)
 - Sends via AppleScript automation
-- Uses Claude to generate intelligent responses
+- Monitors for new messages with a polling loop
+- Uses Claude to generate context-aware responses
+
+## Requirements
+
+- macOS with Messages.app
+- Full Disk Access permission for your terminal/IDE
+- Claude Code
 
 ## License
 
